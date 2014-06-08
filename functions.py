@@ -54,7 +54,8 @@ def my_max(number1, number2):
     return (number1 + number2) / 2 + abs((number1 - number2) / 2)
 
 
-def my_sum(*numbers):  # "*numbers" means variable amount of arguments
+# "*numbers" means variable amount of arguments
+def my_sum(*numbers):
     """Returns the sum of ALL the numbers."""
     sum = 0
 
@@ -63,8 +64,9 @@ def my_sum(*numbers):  # "*numbers" means variable amount of arguments
 
     return sum
 
-
-def write_args(**keywords):  # "**numbers" means variable amount of arguments called using keywords like "test=3"
+# "**numbers" means variable amount of arguments called using keywords like
+# test=3 or name="Student"
+def write_args(**keywords):
     """Writes the arguments and keywords used to call the function."""
     keys = sorted(keywords.keys())
 
