@@ -76,5 +76,5 @@ def write_args(**keywords):
 
 
 def rng(init):
-    """Returns a 'random' number."""
+    """Returns a 'random' number generator function."""
     return lambda n: n * init + init
