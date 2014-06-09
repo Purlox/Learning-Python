@@ -36,7 +36,7 @@ def factorial(fact_num):
         return fact_num * factorial(fact_num - 1)
 
 
-def power(base, exponent = 2):
+def power(base, exponent=2):
     """Returns the power of the base."""
     if exponent == 0:
         return 1
