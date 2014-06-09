@@ -1,4 +1,4 @@
-def prime(prime_num):
+def prime(prime_num: int) -> int:
     """Returns the Xth prime number or -1 on a wrong argument."""
     if prime_num < 1:
         return -1
@@ -36,7 +36,7 @@ def factorial(fact_num):
         return fact_num * factorial(fact_num - 1)
 
 
-def power(base, exponent=2):
+def power(base: int, exponent=2):
     """Returns the power of the base."""
     if exponent == 0:
         return 1
@@ -44,7 +44,7 @@ def power(base, exponent=2):
         return base * power(base, exponent - 1)
 
 
-def my_min(number1, number2):
+def my_min(number1: float, number2: float) -> float:
     """Returns the smaller number of the two numbers."""
     return (number1 + number2) / 2 - abs((number1 - number2) / 2)
 
