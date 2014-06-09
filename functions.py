@@ -73,3 +73,8 @@ def write_args(**keywords):
 
     for key in keys:
         print(key, "=", keywords[key])
+
+
+def rng(init):
+    """Returns a 'random' number."""
+    return lambda n: n * init + init
