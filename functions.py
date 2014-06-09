@@ -64,6 +64,7 @@ def my_sum(*numbers):
 
     return sum
 
+
 # "**numbers" means variable amount of arguments called using keywords like
 # test=3 or name="Student"
 def write_args(**keywords):
