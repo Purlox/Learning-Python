@@ -78,3 +78,21 @@ def write_args(**keywords):
 def rng(init):
     """Returns a 'random' number generator function."""
     return lambda n: n * init + init
+
+
+def squares(num):
+    """Returns a list of num squares."""
+    return [base ** 2 for base in range(num)]
+
+
+def squares2(num):
+    """Returns a list of num tuples of non-squared numbers and squares"""
+    return [(base, base ** 2) for base in range(num)]
+
+
+def ret2(first, second, third):
+    """Returns a list of first and third argument."""
+    numbers = [first, second, third]
+    del numbers[1]
+
+    return ret2
